@@ -1,0 +1,25 @@
+@mixin centerY($asseY) {
+    -webkit-transform: translateY($asseY);
+    -ms-transform: translateY($asseY);
+    transform: translateY($asseY);
+}
+
+@mixin centerAbsolute() {
+    position: absolute;
+    top: 50%;
+}
+
+@mixin keyframes($animationName) {
+    @-webkit-keyframes #{$animationName} {
+      @content; 
+    }
+    @-moz-keyframes #{$animationName} {
+      @content;
+    }
+    @-ms-keyframes #{$animationName} {
+      @content;
+    }
+    @keyframes #{$animationName} {
+      @content;
+    } 
+  }

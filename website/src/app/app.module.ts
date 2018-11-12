@@ -11,6 +11,17 @@ import { AboutMeComponent } from './components/body-content/frontend/about-me/ab
 import { ExperienceComponent } from './components/body-content/frontend/experience/experience.component';
 import { SkillsComponent } from './components/body-content/frontend/skills/skills.component';
 import { ProjectsComponent } from './components/body-content/frontend/projects/projects.component';
+import { LoaderComponent } from './components/loader/loader.component';
+
+const appRoutes: Routes = [
+  {
+    path: 'frontend',
+    component: FrontendComponent
+  },{
+    path: 'deejay',
+    component: DeejayComponent
+  }
+]
 
 @NgModule({
   declarations: [
@@ -22,11 +33,13 @@ import { ProjectsComponent } from './components/body-content/frontend/projects/p
     AboutMeComponent,
     ExperienceComponent,
     SkillsComponent,
-    ProjectsComponent
+    ProjectsComponent,
+    LoaderComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule
+    RouterModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

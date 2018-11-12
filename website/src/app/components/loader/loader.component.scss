@@ -1,0 +1,27 @@
+@import "../../stylesheets/utilities";
+@import "../../stylesheets/variables";
+@import "../../stylesheets/mixins";
+@import "../../stylesheets/animations";
+
+.ws_mask{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $full_width;
+    height: $full_height;
+    background-color: $black;
+
+    .ws_title-container{
+        text-align: center;
+        color: $white;
+        width: $full_width;
+        @include centerY(-50%);
+        @include centerAbsolute();
+
+        .ws_title{
+            opacity: 0;
+            font-size: 90px;
+            animation: fadeIn 4s ease-in-out 0.25s 2 alternate;
+        }
+    }
+}

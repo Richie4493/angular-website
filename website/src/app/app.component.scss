@@ -1,0 +1,8 @@
+@import "stylesheets/utilities";
+@import "stylesheets/variables";
+@import "stylesheets/mixins";
+@import "stylesheets/animations";
+
+*{
+    font-family: $ws_font;
+}
