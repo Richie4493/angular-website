@@ -12,6 +12,7 @@ import { ExperienceComponent } from './components/body-content/frontend/experien
 import { SkillsComponent } from './components/body-content/frontend/skills/skills.component';
 import { ProjectsComponent } from './components/body-content/frontend/projects/projects.component';
 import { LoaderComponent } from './components/loader/loader.component';
+import { CardsComponent } from './components/cards/cards.component';
 
 const appRoutes: Routes = [
   {
@@ -34,7 +35,8 @@ const appRoutes: Routes = [
     ExperienceComponent,
     SkillsComponent,
     ProjectsComponent,
-    LoaderComponent
+    LoaderComponent,
+    CardsComponent
   ],
   imports: [
     BrowserModule,

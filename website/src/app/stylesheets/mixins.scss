@@ -10,16 +10,30 @@
 }
 
 @mixin keyframes($animationName) {
-    @-webkit-keyframes #{$animationName} {
-      @content; 
-    }
-    @-moz-keyframes #{$animationName} {
-      @content;
-    }
-    @-ms-keyframes #{$animationName} {
-      @content;
-    }
-    @keyframes #{$animationName} {
-      @content;
-    } 
+  @-webkit-keyframes #{$animationName} {
+    @content; 
   }
+  @-moz-keyframes #{$animationName} {
+    @content;
+  }
+  @-ms-keyframes #{$animationName} {
+    @content;
+  }
+  @keyframes #{$animationName} {
+    @content;
+  } 
+}
+
+@mixin transition($effect, $speed, $direction) {
+  transition: $effect $speed $direction;
+  -webkit-transition: $effect $speed $direction;
+  -ms-transition: $effect $speed $direction;
+  -moz-transition: $effect $speed $direction;
+}
+
+@mixin transform($property) {
+  transform: $property;
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  -moz-transform: $property;
+}

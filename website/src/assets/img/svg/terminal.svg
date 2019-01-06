@@ -1,0 +1,17 @@
+<svg id="Livello_1" data-name="Livello 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 107.61 69.07">
+	<defs>
+    <style>
+		#target{
+			-webkit-animation: blink 0.5s linear infinite alternate;
+			-o-animation: blink 0.5s linear infinite alternate;
+			animation: blink 0.5s linear infinite alternate;
+		}
+		@keyframes blink{0%{opacity:1;} 100%{opacity:0;} }
+    </style>
+  </defs>
+  <title>terminal</title>
+  <g>
+    <path id="target" d="M453,426.31a2,2,0,0,0-1.5-.58H389a2,2,0,0,0-2.09,2.08V432a2,2,0,0,0,2.09,2.08h62.57a2,2,0,0,0,2.09-2.08v-4.17a2,2,0,0,0-.59-1.5Zm0,0" transform="translate(-346 -365)"/>
+    <path d="M352.91,365.65a2,2,0,0,0-3,0l-3.26,3.26a2.05,2.05,0,0,0,0,3l25.61,25.61-25.61,25.62a2,2,0,0,0,0,3l3.26,3.26a2.05,2.05,0,0,0,3,0L383.28,399a2,2,0,0,0,0-3Zm0,0" transform="translate(-346 -365)"/>
+  </g>
+</svg>

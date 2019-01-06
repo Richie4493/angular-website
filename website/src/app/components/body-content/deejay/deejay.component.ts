@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-deejay',
+  selector: 'ws-deejay',
   templateUrl: './deejay.component.html',
   styleUrls: ['./deejay.component.scss']
 })
