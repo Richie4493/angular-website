@@ -10,6 +10,7 @@
     width: $full_width;
     height: $full_height;
     background-color: $black;
+    z-index: 5;
 
     .ws_title-container{
         text-align: center;

@@ -24,11 +24,11 @@
   } 
 }
 
-@mixin transition($effect, $speed, $direction) {
-  transition: $effect $speed $direction;
-  -webkit-transition: $effect $speed $direction;
-  -ms-transition: $effect $speed $direction;
-  -moz-transition: $effect $speed $direction;
+@mixin transition($x...) {
+  transition: $x;
+  -webkit-transition: $x;
+  -ms-transition: $x;
+  -moz-transition: $x;
 }
 
 @mixin transform($property) {

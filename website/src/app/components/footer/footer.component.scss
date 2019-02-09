@@ -1,0 +1,20 @@
+@import "../../stylesheets/utilities";
+@import "../../stylesheets/variables";
+@import "../../stylesheets/mixins";
+@import "../../stylesheets/animations";
+
+.ws_footer{
+    position: fixed;
+    width: 70px;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba($black, $alpha);
+    z-index: 1;
+    @include transition(right 0.75s ease-in-out, opacity 1s ease-in-out);
+    
+    &.is-close{
+        right: -70px;
+        @include transition(right 0.75s ease-in-out, opacity 1s ease-in-out);
+    }
+}
